@@ -432,9 +432,9 @@ a {
   line-height: 28px;
 }
 
-.mail__submit input {
+.mail__submit input  {
   width: 521px;
-  height: 79px;
+  height: 80px;
   background-color: #ffffff;
   border-radius: 1px solid red;
 }
