@@ -927,7 +927,7 @@ a {
   height: 33px;
   background-color: #ffffff;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .footer__info ul li a:hover {
