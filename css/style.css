@@ -60,6 +60,127 @@ a {
   background-color: red;
   text-decoration: none;
 }
+
+.burger {
+	display: none;
+	margin-right: 15px;
+}
+.burger span:nth-child(1).scrolled,
+.burger span:nth-child(2).scrolled,
+.burger span:nth-child(3).scrolled  {
+	background-color: black;
+}
+
+.burger span:nth-child(1),
+.burger span:nth-child(3) {
+	display: block;
+	background-color: #fff;
+	width: 22px;
+	height: 1px;
+	margin: 5px auto;
+	transition: all 0.8s;
+}
+
+.burger span:nth-child(2) {
+	display: block;
+	background-color: #fff;
+	width: 32px;
+	height: 1px;
+	margin: 5px auto;
+}
+
+.burger:hover span:nth-child(1),
+.burger:hover span:nth-child(3){
+	width: 32px;
+}
+
+.burger__navigation_menu {
+  position: fixed;
+  background-color: #323131;
+  opacity: 0;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  transform: translateY(-200%);
+	transition: all 0.5s;
+}
+
+.burger__navigation_menu.open {
+  transform: translateY(0);
+  opacity: 1;
+	
+}
+
+.burger__navigation_menu.close {
+	transform: translateY(-100%);
+	display: none;
+}
+
+.burger__navigation_menu__closeBtn {
+	width: 300px;
+	height: 300px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: fixed;
+	left: 80%;
+	bottom:83%;
+}
+
+.burger__navigation_menu__closeBtn .burgerClose {
+	color: #f42c2d;
+	font-size: 40px;
+	position: absolute;
+	bottom: 17%;
+	left: 19%;
+}
+
+.navigation {
+  border: 1px solid #ff0000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #ff0000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34.06px;
+  letter-spacing: 0.32px;
+  margin: 6px 60px;
+  padding: 11px;
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    padding-top: 0;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .header__content {
+    height: 50px;
+    justify-content: flex-end;
+  }
+  .header__item {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .burger__navigation_menu__closeBtn .burgerClose {
+	  left: 15%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .burger__navigation_menu__closeBtn .burgerClose {
+	  left: 10%;
+  }
+  .burger__navigation_menu__closeBtn {
+    left: 79%;
+    bottom: 84%;
+  }
+} 
 /* End Header */
 
 
@@ -131,7 +252,7 @@ a {
 
 .main__video {
   position: relative;
-  max-width: 551px;
+  width: 100%;
   margin: 0 auto;
   box-shadow: -2px -14px 73px rgba(0, 0, 0, 0.29);
   background-color: #ff2222;
@@ -156,6 +277,27 @@ a {
 
 .main__video__icon a:hover {
   color: #ff0000;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__content {
+    margin-top: 35px;
+  }
+  .main__info {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (max-width: 767px){
+  .main__info h1 {
+    line-height: 55px;
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main__info h1 {
+    line-height: 35px;
+    font-size: 25px;
+  }
 }
 /* End Hero Section */
 
@@ -242,6 +384,23 @@ a {
   font-weight: 400;
   line-height: 28px;
 }
+
+@media screen and (max-width: 992px) {
+  .provide__info {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px){
+  .provide__info h2{
+    margin-top: 17px;
+  }
+}
+@media screen and (max-width: 575px){
+  .provide__title h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
 /* End Provide Section */
 
 /* Start Feature Section */
@@ -251,7 +410,6 @@ a {
 }
 
 .feature__title h1 {
-  margin-right: -29px;
   margin-bottom: 20px;
   opacity: 0.8;
   color: #000000;
@@ -281,7 +439,7 @@ a {
 }
 
 .feature__filters {
-  margin: 68px 0 47px 0;
+  margin: 65px 0 47px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,11 +479,59 @@ a {
 .feature__img {
   margin-bottom: 20px;
 }
+
+.feature__img img {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .feature__filters .filters__content {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature__filters .filters__content:nth-child(1) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .feature__filters .filters__content:nth-child(2) {
+    margin-right: 15px;
+  }
+  .feature__filters .filters__content:nth-child(3) {
+    margin-right: 15px;
+  }
+  .feature__filters .filters__content:nth-child(4) {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .feature__filters .filters__content {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .feature__title h1 {
+    font-size: 27px;
+  }
+  .feature__title p {
+    font-size: 14px;
+  }
+  .feature__title p:after {
+    margin: 35px auto 0;
+  }
+  #feature {
+    margin-top: 60px;
+  }
+  .feature__filters .filters__content {
+    font-size: 11px;
+  }
+  .feature__filters {
+    margin: 35px 0 27px 0;
+  }
+}
 /* End Feature Section */
 
 /* Start Team Section */
 #team {
-  margin-top: 107px;
+  margin-top: 118px;
 }
 
 .team__title h1 {
@@ -360,7 +566,7 @@ a {
 }
 
 .team__member__title {
-  margin: 0 0 56px 11px;
+  margin: 0 0 65px 11px;
 }
 
 .team__member__title h1 {
@@ -407,14 +613,15 @@ a {
   color: #ff2d2d;
 }
 
-.team__members:hover {
+.team__members img {
+  width: 100%;
 }
 /* End Team Section */
 
 /* Start Mail Section */
 .mail__container {
   min-height: 510px;
-  margin-top: 94px;
+  margin-top: 110px;
   padding-top: 143px;
   text-align: center;
   background-color: wheat;
@@ -426,7 +633,7 @@ a {
   font-family: "Open Sans";
   font-size: 42px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 48px;
   letter-spacing: 1.05px;
   margin-bottom: 40px;
 }
@@ -441,11 +648,11 @@ a {
 }
 
 .mail__submit {
-  margin-top: 56px
+  margin-top: 32px
 }
 
 .mail__submit input {
-  width: 28%;
+  width: 521px;
   height: 79px;
   border-radius: 5px;
   border: 1px solid white;
@@ -476,6 +683,27 @@ a {
   color: #ff0000;
   background-color: #ffffff;
   border: 2px solid #ff3b3b;
+}
+
+@media screen and (max-width: 767px) {
+  .mail__container {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .mail__submit {
+    margin-top: 40px;
+  }
+  .mail__submit a {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mail__title h1 {
+    font-size: 30px;
+  }
+  .mail__submit input {
+    width: 310px;
+  }
 }
 /* End Mail Section */
 
@@ -568,6 +796,7 @@ a {
   transition: all 0.3s;
   outline: none;
 }
+
 .contact #button:hover {
   border: 2px solid #ff3b3b;
   color: #ff3b3b;
@@ -580,7 +809,8 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 6px;
-  width: 577px;
+  padding: 30px;
+  /* width: 100%; */
   height: 481px;
   background-color: #2d2d2d;
 }
@@ -601,13 +831,48 @@ a {
 }
 
 .contact__info p {
-  margin: 18px 0;
+  margin: 21px 0 0px 0;
   opacity: 0.9;
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+}
+@media screen and (max-width: 992px) {
+  .contact__info__wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    height: 281px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact__form input {
+    margin-bottom: 30px;
+  }
+  .contact__form textarea {
+    margin-top: 0;
+    padding: 30px 0 90px 48px;
+  }
+}
+@media screen and (max-width: 575px) {  
+  #contact {
+    margin-top: 56px;
+  }
+  .contact__title h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .contact__title p {
+    font-size: 14px;
+  }
+  .contact__title p:after {
+    margin: 29px 0px 40px 0;
+  }
+  .contact__form input[type="text"]::placeholder {
+    font-size: 16px;
+  }
 }
 /* End Contact Section */
 
@@ -630,6 +895,7 @@ a {
   justify-content: space-around;
   width: 100%;
   margin-top: 17px;
+  padding: 0 10px;
 }
 
 .footer__info p {
@@ -652,7 +918,9 @@ a {
   margin-right: 15px;
 }
 
-.footer__info ul li div {
+.footer__info ul li a {
+  color: black;
+  display: block;
   cursor: pointer;
   border-radius: 50%;
   width: 33px;
@@ -662,19 +930,31 @@ a {
   transition: all 0.3s;
 }
 
-.footer__info ul li div:hover {
+.footer__info ul li a:hover {
   background-color: #000000;
 }
 
-.footer__info ul li div:hover i {
+.footer__info ul li a:hover i {
   color: #ffffff;
 }
 
-.footer__info ul li div i {
+.footer__info ul li a i {
   position: absolute;
   top: 23%;
   left: 23%;
   font-size: 18px;
   transition: all 0.3s;
+}
+@media screen and (max-width: 575px) {
+  .footer__info p {
+    font-size: 13px;
+  }
+  .footer__info ul li a {
+    width: 27px;
+    height: 27px;
+  }
+  .footer__info ul li a i{
+    font-size: 15px;
+  }
 }
 /* End Footer */

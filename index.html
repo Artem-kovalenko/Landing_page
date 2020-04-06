@@ -24,28 +24,70 @@
         <div class="header__content">
             <nav>
                 <ul>
-                    <li><a class="header__item" href="">Home</a></li>
-                    <li><a class="header__item" href="">Portfolio</a></li>
-                    <li><a class="header__item" href="">About US</a></li>
-                    <li><a class="header__item" href="">Contact</a></li>
+                    <li><a class="header__item anchor" href="#hero">Home</a></li>
+                    <li><a class="header__item anchor" href="#feature">Portfolio</a></li>
+                    <li><a class="header__item anchor" href="#team">About US</a></li>
+                    <li><a class="header__item anchor" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <a href="" class="burger">
+                <span class="burger__menu"></span>
+		    	<span class="burger__menu"></span>
+			    <span class="burger__menu"></span>
+            </a>
         </div>
-    </header>
+        <div class="burger__navigation_menu">
+            <div class="container">
+                <div class="burger__navigation_menu__closeBtn">
+					<a href="" class="burgerClose"><i class="fa fa-times" aria-hidden="true"></i></a>
+				</div>
+				<div class="row text-center">
+						<div class="col-12">
+							<a href="#hero" class="anchor close__nav">
+								<div class="navigation">
+									Home
+								</div>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="#feature" class="anchor close__nav">
+								<div class="navigation">
+									Portfolio
+								</div>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="#team" class="anchor close__nav">
+								<div class="navigation">
+									About US
+								</div>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="#contact" class="anchor close__nav">
+								<div class="navigation">
+									Contact
+								</div>
+							</a>
+						</div>
+				</div>
+            </div>
+        </div>
+    </header>   
     <!-- End Header -->
 
     <!-- Start Hero Section -->
     <section class="hero" id="hero">    
         <div class="container-fluid">
             <div class="row hero__content">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-7">
                         <div class="main__info">
                             <h1> <span>our strong</span> <span>organaisation</span> </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
                             <a href="">Contact Us</a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-5">
                         <div class="main__video">
                              <img src="img/main-img.jpg" alt="">
                         </div> 
@@ -73,7 +115,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-md-6 col-lg-6">
                             <div class="provide__info">
                                 <div>
                                     <img src="img/Settings.png" alt="">
@@ -88,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-md-6 col-lg-6">
                             <div class="provide__info">
                                 <div>
                                     <img src="img/Pencil.png" alt="">
@@ -106,11 +148,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- End Provide Section -->
 
     <!-- Start Feature Section -->
-    <section class="feature" id="feature">
+     <section class="feature" id="feature">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -168,7 +210,7 @@
     <!-- End Feature Section -->
 
     <!-- Start Team Section -->
-    <section class="team" id="team">
+    <!-- <section class="team" id="team">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -210,17 +252,16 @@
                                     <a href=""><em>Twiter</em></a>
                                 </div>
                             </div>
-                            сделать чтоб при ховере выезжала подпись на js
                         </div>
-                        <div class="col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
+                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
+                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
+                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
+                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Team Section -->
 
     <!-- Start Mail Section -->
@@ -242,7 +283,7 @@
     <section class="contact" id="contact">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="contact__title">
                         <h1>get in touch</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
@@ -250,7 +291,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-12 col-lg-7">
                     <div class="row contact__form">
                         <div class="col-12 col-md-6 col-lg-6">
                             <input type="text" placeholder="Name">
@@ -264,7 +305,7 @@
                     </div>
                     <input type="button" value="send message" id="button">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-12 col-lg-5">
                     <div class="contact__info__wrapper">
                         <div class="contact__info">
                             <h2>contact info</h2>
@@ -278,7 +319,7 @@
             </div>
         </div>
     </section> 
-    <!-- End Contact Section -->
+    <!-- End Contact Section -->    
 
     <!-- Start Footer Section -->
     <footer class="footer">
@@ -286,21 +327,25 @@
             <div class="footer__info">
                 <p>© Copyright @Junaed 2016, All rights reserved.</p>
                 <ul>
-                    <li><div><i class="fa fa-twitter" aria-hidden="true"></i></div></li>
-                    <li><div><i class="fa fa-linkedin" aria-hidden="true"></i></div></li>
-                    <li><div><i class="fa fa-google-plus" aria-hidden="true"></i></div></li>
-                    <li><div><i class="fa fa-facebook" aria-hidden="true"></i></div></li>
+                    <li> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i>       </a></li>
+                    <li> <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i>      </a></li>
+                    <li> <a href=""> <i class="fa fa-google-plus" aria-hidden="true"></i>   </a></li>
+                    <li> <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i>      </a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> 
     <!-- End Footer Section -->
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- start js -->
+	<script src="js/common.js"></script>
+	<!-- end js -->
 </body>
 </html>
