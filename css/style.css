@@ -2,17 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* text-align: center; */
-}
-
-a {
-  text-decoration: none;
 }
 
 .container-fluid {
   max-width: 1290px;
 }
-
 /* Start Header */
 .header {
   background-color: #f6f2f2;
@@ -151,7 +145,6 @@ a {
   margin: 6px 60px;
   padding: 11px;
 }
-
 @media screen and (max-width: 575px) {
   .header {
     padding-top: 0;
@@ -186,7 +179,6 @@ a {
 
 /* Start Hero Section */
 #hero {
-  width: 100%;
   min-height: 572px;
   background-color: #f6f2f2;
   display: flex;
@@ -265,7 +257,7 @@ a {
 
 .main__video__icon {
   position: absolute;
-  top: 37%;
+  top: 33%;
   left: 47%;
 }
 
@@ -287,7 +279,7 @@ a {
     margin-bottom: 45px;
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .main__info h1 {
     line-height: 55px;
     font-size: 37px;
@@ -300,6 +292,7 @@ a {
   }
 }
 /* End Hero Section */
+
 
 /* Start Provide Section */
 #provide {
@@ -390,12 +383,12 @@ a {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .provide__info h2{
     margin-top: 17px;
   }
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575px) {
   .provide__title h1 {
     font-size: 30px;
     line-height: 45px;
@@ -504,8 +497,14 @@ a {
   }
 }
 @media screen and (max-width: 575px) {
+  #feature {
+    margin-top: 60px;
+  }
+  .feature__filters {
+    margin: 35px 0 27px 0;
+  }
   .feature__filters .filters__content {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 15px;
   }
   .feature__title h1 {
@@ -517,17 +516,9 @@ a {
   .feature__title p:after {
     margin: 35px auto 0;
   }
-  #feature {
-    margin-top: 60px;
-  }
-  .feature__filters .filters__content {
-    font-size: 11px;
-  }
-  .feature__filters {
-    margin: 35px 0 27px 0;
-  }
 }
 /* End Feature Section */
+
 
 /* Start Team Section */
 #team {
@@ -566,7 +557,7 @@ a {
 }
 
 .team__member__title {
-  margin: 0 0 65px 11px;
+  margin: 0 0 49px 11px;
 }
 
 .team__member__title h1 {
@@ -616,13 +607,65 @@ a {
 .team__members img {
   width: 100%;
 }
+@media screen and (max-width: 1140px) {
+  .main__image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team__member__title {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__title,
+  .team__member__title {
+    text-align: center;
+  }
+  .team__title p,
+  .team__member__title p {
+    max-width: 100%;
+  }
+  .team__title p:after {
+    margin: 29px auto 40px;
+  }
+  .main__image {
+    display: none;
+  }
+  .team__social {
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 575px) {
+  #team {
+    margin-top: 80px;
+  }
+  .team__title h1 {
+    font-size: 29px;
+  }
+  .team__title p {
+    font-size: 16px;
+  }
+  .team__social__content a {
+    font-size: 15px;
+    margin-right: 13px;
+  }
+  .team__member__title h1 {
+    font-size: 25px;
+  }
+  .team__member__title p {
+    font-size: 15px;
+  }
+}
 /* End Team Section */
+
 
 /* Start Mail Section */
 .mail__container {
   min-height: 510px;
-  margin-top: 110px;
-  padding-top: 143px;
+  margin-top: 123px;
+  padding-top: 134px;
   text-align: center;
   background-color: wheat;
 }
@@ -648,7 +691,7 @@ a {
 }
 
 .mail__submit {
-  margin-top: 32px
+  margin-top: 43px
 }
 
 .mail__submit input {
@@ -704,8 +747,12 @@ a {
   .mail__submit input {
     width: 310px;
   }
+  .mail__container {
+    margin-top: 56px;
+  }
 }
 /* End Mail Section */
+
 
 /* Start Contact Section */
 #contact {
@@ -875,6 +922,7 @@ a {
   }
 }
 /* End Contact Section */
+
 
 /* Start Footer */
 .footer {

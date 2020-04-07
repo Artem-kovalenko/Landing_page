@@ -9,7 +9,6 @@ $(".anchor").on("click", function(event) {
  1000
  );
 });
-
 // открыть выпадающее меню
 let burger = document.querySelector(".burger");
 burger.addEventListener("click", function(e) {
@@ -34,4 +33,22 @@ for (let i = 0; i < close__nav.length; i++) {
 		burger__navigation_menu.classList.remove("open");
 	});
 };
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            575:{
+                items:3
+            },
+            767:{
+            	items:4
+            }
+        }
+    });
+  });
 

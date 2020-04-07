@@ -10,13 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- End Fonts -->
 
+    <!-- Start Owl Carousel styles -->
+    <link rel="stylesheet" href="libs/jowcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/jowcarousel2/assets/owl.theme.default.css">
+    <!-- End Owl Carousel styles -->
+
+    <!-- Start Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <!-- End Bootstrap CSS -->
+
     <!-- Start Style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- End Style -->
-
-    <!-- Start Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- End Bootstrap CSS -->
 </head>
 <body>
     <!-- Start Header -->
@@ -75,7 +80,7 @@
         </div>
     </header>   
     <!-- End Header -->
-
+   
     <!-- Start Hero Section -->
     <section class="hero" id="hero">    
         <div class="container-fluid">
@@ -152,7 +157,7 @@
     <!-- End Provide Section -->
 
     <!-- Start Feature Section -->
-     <section class="feature" id="feature">
+    <section class="feature" id="feature">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -194,23 +199,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
-                <div class="col-12 col-md-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
+                <div class="col-6 col-lg-3"> <div class="feature__img"><img src="https://via.placeholder.com/298x291" alt=""></div> </div>
             </div>
         </div>
     </section>
     <!-- End Feature Section -->
 
     <!-- Start Team Section -->
-    <!-- <section class="team" id="team">
+    <section class="team" id="team">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -226,10 +231,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-lg-4">
-                    <img src="https://via.placeholder.com/321x458" alt="">
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="main__image">
+                        <img src="https://via.placeholder.com/321x458" alt="">
+                    </div>
                 </div>
-                <div class="col-6 col-lg-8">
+                <div class="col-sm-12 col-md-8 col-lg-8">
                     <div class="row">
                         <div class="team__member__title">
                             <h1>
@@ -253,15 +260,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
-                        <div class="col-md-6 col-lg-3"><div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div></div>
+                        
+                        <div class="owl-carousel">
+                            <div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div>
+                            <div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div>
+                            <div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div>
+                            <div class="team__members"><img src="https://via.placeholder.com/197x214" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End Team Section -->
 
     <!-- Start Mail Section -->
@@ -337,15 +347,17 @@
     </footer> 
     <!-- End Footer Section -->
 
+    <!-- Start jQuery  -->
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <!-- End jQuery  -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Start Owlcarousel scripts -->
+    <script src="libs/jowcarousel2/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End Owlcarousel scripts -->
 
-    <!-- start js -->
+    <!-- Start js -->
 	<script src="js/common.js"></script>
-	<!-- end js -->
+	<!-- End js -->
 </body>
 </html>
