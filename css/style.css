@@ -100,7 +100,7 @@
 	display: flex;
 	align-items: center;
   transform: translateY(-200%);
-	transition: all 0.5s;
+	transition: all 0.4s;
 }
 
 .burger__navigation_menu.open {
